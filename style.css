@@ -1,0 +1,908 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 75px;
+    padding: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 10px #ccc;
+}
+
+header h1 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 220px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #030300;
+    padding: 20px;
+}
+
+ul li a.active {
+    padding: 10px 15px;
+    width: auto;
+    border-radius: 5px;
+    color: white;
+    background-color: chocolate;
+    border: none;
+}
+
+.barner {
+    width: 85%;
+    height: 500px;
+    margin: 30px auto;
+    position: relative;
+}
+
+.barner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.barner .content {
+    margin: 24% 4%;
+    padding: 15px;
+    position: absolute;
+}
+
+.barner .content h1 {
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px 0;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.barner .content p {
+    font-size: 18px;
+    padding: 10px 0;
+    color: white;
+}
+
+.barner .content button {
+    padding: 14px 18px;
+    margin-top: 8px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    width: auto;
+    border-radius: 5px;
+    color: white;
+    background-color: chocolate;
+    border: none;
+    cursor: pointer;
+}
+
+.projects {
+    width: 85%;
+    height: auto;
+    margin: 30px auto;
+    /* border: 1px solid black; */
+}
+
+.projects h1 {
+    text-align: left;
+    font-weight: 600;
+    padding: 20px 0;
+}
+
+.all-project {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: 20px auto;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.projet {
+    width: 360px;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.projet img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.projet .details {
+    margin: 15px 5px;
+}
+
+.projet .details h2 {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.projet .details p {
+    font-size: 16px;
+    margin-top: 8px;
+    text-align: justify;
+}
+
+.projet .details button {
+    width: 100%;
+    padding: 12px 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 500;
+    transition: all 0.6s ease-out;
+}
+
+.projet .details button:hover {
+    background: #ccc;
+}
+
+.about {
+    width: 85%;
+    height: auto;
+    margin: 10px auto;
+}
+
+.about h1 {
+    padding: 15px 0;
+}
+
+.about p {
+    line-height: 25px;
+}
+
+.services {
+    width: 85%;
+    height: auto;
+    margin: 30px auto;
+}
+
+.services h1 {
+    padding: 15px 0;
+}
+
+.all-services {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: 20px auto;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.service {
+    width: 360px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.service img {
+    width: 100%;
+    height: 480px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.service .details {
+    margin: 15px 5px;
+}
+
+.service .details h2 {
+    font-size: 20px;
+    margin-top: 8px;
+    text-align: justify;
+}
+
+.service .details p {
+    font-size: 16px;
+    margin-top: 8px;
+    text-align: justify;
+}
+
+.testimonials {
+    width: 85%;
+    height: auto;
+    margin: 30px auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.testimonials h1 {
+    text-align: justify;
+}
+
+.clients {
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    margin: 60px auto;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.avis {
+    width: 260px;
+    height: auto;
+}
+
+.avis img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 100px;
+}
+
+.avis p:nth-child(3) {
+    color: chocolate;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.others {
+    width: 85%;
+    height: auto;
+    margin: 50px auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.others h1 {
+    padding: 10px;
+    letter-spacing: 1px;
+}
+
+.others button {
+    padding: 14px 20px;
+    margin-top: 15px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    width: auto;
+    border-radius: 5px;
+    color: white;
+    background-color: chocolate;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    height: 70px;
+    background-color: #ccc;
+    color: #030300;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer p {
+    padding: 25px;
+}
+
+.hamburger {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    /* margin-right: 25px; */
+    display: none;
+}
+
+.container {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5em;
+}
+
+.item {
+    background-color: #eb904b;
+    color: #eb904b;
+    border-radius: 10px;
+    padding: 10px 5px;
+    box-shadow: #3c40434d 0px 1px 2px 0px, #3c404326 0px 1px 3px 1px;
+    cursor: pointer;
+    position: relative;
+    width: 250px;
+    height: 300px;
+}
+
+.item::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    z-index: 2;
+    height: 80%;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: transparent transparent transparent #eb904b;
+    border-width: 40px 40px 40px 40px;
+    filter: drop-shadow(5px 0 4px #00000094);
+    transition: filter .5s;
+}
+
+.item p {
+    font-size: 9px;
+}
+
+.item h3,
+.item h4 {
+    margin: 0;
+}
+
+.item:nth-child(2) {
+    color: #813085;
+}
+
+.item:nth-child(3) {
+    color: #119630;
+}
+
+.layer {
+    background-color: #f2f2f2;
+    border: 1px solid #fff;
+    border-radius: inherit;
+    padding: 20px;
+    box-shadow: #00000012 0px 1px 2px, #00000012 0px 2px 4px, #00000012 0px 4px 8px, #00000012 0px 8px 16px, #00000012 0px 16px 32px, #00000012 0px 32px 64px;
+    position: relative;
+    left: 10px;
+    transition: left 1s;
+    width: 250px;
+    height: 270px;
+}
+
+.item h3 {
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    color: #119630;
+}
+
+.item h4 {
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.item p {
+    color: #555;
+}
+
+.item span {
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    background-color: #119630;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    box-shadow: #00000012 0px 1px 2px, #00000012 0px 2px 4px, #00000012 0px 4px 8px, #00000012 0px 8px 16px, #00000012 0px 16px 32px, #00000012 0px 32px 64px;
+    font-size: 14px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+
+.item:hover::after {
+    filter: drop-shadow(5px 0 4px #0000001a);
+}
+
+.item:hover .layer {
+    left: 50px;
+}
+
+
+@media screen and (min-width:320px) and (max-width:480px) {
+    .hamburger {
+        z-index: 10;
+        position: relative;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        margin-right: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hamburger::before {
+        position: absolute;
+        content: "";
+        width: 32px;
+        height: 5px;
+        border-radius: 6px;
+        box-shadow: 6px 10px black;
+        background-color: black;
+        transform: translateY(-10px);
+        transition: 0.5s;
+    }
+
+    .hamburger::after {
+        position: absolute;
+        content: "";
+        width: 32px;
+        height: 5px;
+        border-radius: 6px;
+        background-color: black;
+        transform: translateY(10px);
+        transition: 0.5s;
+    }
+
+    .hamburger.active::before {
+        box-shadow: 0 0 black;
+        transform: rotate(135deg);
+    }
+
+    .hamburger.active::after {
+        transform: rotate(-135deg);
+    }
+
+    header {
+        width: 100%;
+        height: 70px;
+        padding: 15px;
+    }
+
+    header ul {
+        top: 100%;
+        left: 0;
+        right: 0;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 75vh;
+        display: block;
+        color: black;
+        background-color: white;
+        transform: translate(-100%);
+        transition: transform 1s ease;
+    }
+
+    header ul li {
+        padding: 15px;
+        font-size: 23px;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    header ul li a:hover::before {
+        display: none;
+    }
+
+    header ul.open {
+        transform: translate(0);
+    }
+
+    header h1 {
+        font-size: 20px;
+        font-weight: 600;
+        /* margin-right: 220px; */
+    }
+
+    ul {
+        list-style-type: none;
+        display: none;
+    }
+
+    .barner {
+        width: auto;
+        height: 400px;
+        margin: 15px 5px;
+        position: relative;
+    }
+
+    .barner img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        position: absolute;
+    }
+
+    .barner .content {
+        margin: 30% 2%;
+        padding: 15px;
+        position: absolute;
+    }
+
+    .barner .content h1 {
+        line-height: 45px;
+    }
+
+    .barner .content button {
+        margin-top: 13px;
+    }
+
+    .projects {
+        width: auto;
+        height: auto;
+        margin: 20px 5px;
+    }
+
+    .projects h1 {
+        padding: 15px 0;
+    }
+
+    .all-project {
+        width: 100%;
+        height: auto;
+        display: flex;
+        margin: 20px 5px;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .about {
+        width: auto;
+        height: auto;
+        margin: 10px 15px;
+    }
+
+    .services {
+        width: auto;
+        height: auto;
+        margin: 30px 15px;
+    }
+
+    .services h1 {
+        padding: 15px 0;
+    }
+
+    .all-services {
+        width: 100%;
+        height: auto;
+        display: flex;
+        margin: 20px auto;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .testimonials {
+        width: auto;
+        height: auto;
+        margin: 30px 15px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .testimonials h1 {
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .clients {
+        width: auto;
+        height: auto;
+        display: flex;
+        margin: 40px auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .others {
+        width: auto;
+        height: auto;
+        margin: 50px auto;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:768px) {
+    .hamburger {
+        z-index: 10;
+        position: relative;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        margin-left: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hamburger::before {
+        position: absolute;
+        content: "";
+        width: 32px;
+        height: 5px;
+        border-radius: 6px;
+        box-shadow: 6px 10px black;
+        background-color: black;
+        transform: translateY(-10px);
+        transition: 0.5s;
+    }
+
+    .hamburger::after {
+        position: absolute;
+        content: "";
+        width: 32px;
+        height: 5px;
+        border-radius: 6px;
+        background-color: black;
+        transform: translateY(10px);
+        transition: 0.5s;
+    }
+
+    .hamburger.active::before {
+        box-shadow: 0 0 black;
+        transform: rotate(135deg);
+    }
+
+    .hamburger.active::after {
+        transform: rotate(-135deg);
+    }
+
+    header {
+        width: 100%;
+        height: 70px;
+        padding: 5px;
+    }
+
+    header ul {
+        top: 100%;
+        left: 0;
+        right: 0;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 75vh;
+        display: block;
+        color: black;
+        background-color: white;
+        transform: translate(-100%);
+        transition: transform 1s ease;
+    }
+
+    header ul li {
+        padding: 15px;
+        font-size: 23px;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    header ul li a:hover::before {
+        display: none;
+    }
+
+    header ul.open {
+        transform: translate(0);
+    }
+
+    header h1 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-right: 400px;
+    }
+
+    ul {
+        list-style-type: none;
+        display: none;
+    }
+
+    .barner {
+        width: auto;
+        height: 450px;
+        margin: 15px 5px;
+        position: relative;
+    }
+
+    .barner img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        position: absolute;
+    }
+
+    .barner .content {
+        margin: 30% 2%;
+        padding: 15px;
+        position: absolute;
+    }
+
+    .barner .content h1 {
+        line-height: 45px;
+    }
+
+    .barner .content button {
+        margin-top: 13px;
+    }
+
+    .projects {
+        width: auto;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    .projects h1 {
+        padding: 15px 0;
+    }
+
+    .all-project {
+        width: 100%;
+        height: auto;
+        display: flex;
+        margin: 20px 5px;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .projet {
+        width: 355px;
+        height: 430px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 0 10px #ccc;
+        border-radius: 10px;
+        justify-content: center;
+    }
+
+    .about {
+        width: auto;
+        height: auto;
+        margin: 10px 5px;
+    }
+
+    .services {
+        width: auto;
+        height: auto;
+        margin: 30px 5px;
+    }
+
+    .services h1 {
+        padding: 15px 0;
+    }
+
+    .all-services {
+        width: 100%;
+        height: auto;
+        display: flex;
+        margin: 20px auto;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .service {
+        width: 355px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 0 10px #ccc;
+        border-radius: 10px;
+        justify-content: center;
+    }
+
+    .testimonials {
+        width: auto;
+        height: auto;
+        margin: 30px 15px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .testimonials h1 {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .clients {
+        width: 100%;
+        height: auto;
+        display: flex;
+        margin: 40px auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .others {
+        width: auto;
+        height: auto;
+        margin: 50px auto;
+    }
+
+    footer {
+        width: auto;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+    header {
+        padding: 5px;
+    }
+
+    header h1 {
+        margin-right: 210px;
+    }
+
+    ul li a {
+        padding: 15px;
+    }
+
+    .barner .content {
+        margin: 30% 2%;
+    }
+
+    .testimonials {
+        width: auto;
+        height: 100%;
+        margin: 30px auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .testimonials h1 {
+        text-align: center;
+        margin-left: 70px;
+        /* padding: 15px; */
+    }
+
+    .clients {
+        width: auto;
+        height: auto;
+        display: flex;
+        margin: 60px 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .avis {
+        width: 300px;
+        height: auto;
+    }
+
+    .others {
+        width: auto;
+        height: auto;
+    }
+
+    .others h1 {
+        padding: 10px;
+        letter-spacing: 1px;
+    }
+
+    .others button {
+        margin-top: 16px;
+    }
+}
